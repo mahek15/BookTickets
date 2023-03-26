@@ -14,8 +14,8 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static final List<Widget>_widgetOptions = <Widget>[
-    HomeScreen(),
-    SearchScreen(),
+    const HomeScreen(),
+    const SearchScreen(),
     const Text("Tickets"),
     const Text("Profile"),
   ];
@@ -40,7 +40,7 @@ class _BottomBarState extends State<BottomBar> {
         selectedItemColor: Colors.blueGrey,
         unselectedItemColor: const Color(0xFF526480),
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(FluentSystemIcons.ic_fluent_home_regular),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
               label: "Home"),
